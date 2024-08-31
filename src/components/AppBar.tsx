@@ -1,9 +1,18 @@
-import React from 'react'
+import { FC } from "react";
+import { LuMenu } from "next/link";
+import NetworkSwitcher from "./NetworkSwitcher";
 
-const AppBar = () => {
+export const AppBar: FC = (props) => {
+  const menu = [
+    { name: "Home", link: "#home" },
+    { name: "Features", link: "#features" },
+    { name: "Price", link: "#price" },
+    { name: "Tools", link: "#tools" },
+    { name: "Faq", link: "#faq" },
+  ];
   return (
-    <div>AppBar</div>
-  )
-}
-
-export default AppBar
+    <div>
+      <header id="navbar-sticky" className="navbar"></header>
+    </div>
+  );
+};
