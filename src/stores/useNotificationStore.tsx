@@ -2,7 +2,7 @@ import create, { State } from "zustand";
 import produce from "immer";
 
 interface NotificationStore extends State {
-  notification: Array<{
+  notifications: Array<{
     type: string;
     message: string;
     description?: string;
@@ -12,7 +12,7 @@ interface NotificationStore extends State {
 }
 
 const useNotificationStore = create<NotificationStore>((set, _get) => ({
-  notification: [],
+  notifications: [],
   set: (fn) => set(produce(fn)),
 }));
 
