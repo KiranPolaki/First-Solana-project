@@ -29,11 +29,11 @@ export const ToolView: FC<ToolViewProps> = ({
       icon: <MdGeneratingTokens />,
       function: setOpenTokenMetaData,
     },
-    {
-      name: "Contact Us",
-      icon: <MdGeneratingTokens />,
-      function: setOpenContact,
-    },
+    // {
+    //   name: "Contact Us",
+    //   icon: <MdGeneratingTokens />,
+    //   function: setOpenContact,
+    // },
     {
       name: "AirDrop",
       icon: <MdGeneratingTokens />,
