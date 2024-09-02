@@ -1,4 +1,4 @@
-const question = [
+export const question = [
   {
     question: " Who are produces sit pleasure?",
     answer:
@@ -36,5 +36,3 @@ const question = [
     id: "faq-6",
   },
 ];
-
-

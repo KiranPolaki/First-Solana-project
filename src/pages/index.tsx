@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { Dispatch, SetStateAction, useState } from "react";
 import type { NextPage } from "next";
 import Head from "next/head";
 
@@ -6,13 +6,11 @@ import {
   HomeView,
   ToolView,
   FeatureView,
-  OfferView,
-  FaqView,
   CreateView,
-  TokenMetadata,
-  ContactView,
-  AirDropView,
-  DonateView,
+  // TokenMetadata,
+  // ContactView,
+  // AirDropView,
+  // DonateView,
 } from "../views";
 
 const Home: NextPage = (props) => {
@@ -38,7 +36,7 @@ const Home: NextPage = (props) => {
         setOpenSendTransaction={setOpenSendTransaction}
         setOpenTokenMetaData={setOpenTokenMetaData}
       />
-      {/* 
+
       <FeatureView
         setOpenAirDrop={setOpenAirDrop}
         setOpenContact={setOpenContact}
@@ -46,13 +44,12 @@ const Home: NextPage = (props) => {
         setOpenSendTransaction={setOpenSendTransaction}
         setOpenTokenMetaData={setOpenTokenMetaData}
       />
-      <OfferView />
-      <FaqView />
       {openCreateModal && (
         <div className="new_loader relative h-full bg-slate-900">
           <CreateView setOpenCreateModal={setOpenCreateModal} />
         </div>
       )}
+      {/* 
       {openTokenMetaData && (
         <div className="new_loader relative h-full bg-slate-900">
           <TokenMetadata setOpenTokenMetaData={setOpenTokenMetaData} />
