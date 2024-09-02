@@ -22,7 +22,7 @@ export const HomeView: FC<HomeViewProps> = ({ setOpenCreateModal }) => {
                   Create Solana Token {pkg.version}
                 </span>
                 <h1 className="md:text-6xl/tight my-4 max-w-4xl text-6xl tracking-wider text-white text-center font-mono font-extrabold p-12">
-                  Create Solana Tokens Without Code
+                  Create Solana Tokens and many more With ease
                 </h1>
                 <p className="text-gray-400 md:text-lg font-mono max-w-3xl text-center tracking-tighter">
                   Launch Your Solana token and get Airdrops, MetaData, All in

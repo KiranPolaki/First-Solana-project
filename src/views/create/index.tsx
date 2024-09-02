@@ -27,7 +27,7 @@ import { ClipLoader } from "react-spinners";
 import { useNetworkConfiguration } from "contexts/NetworkConfigurationProvider";
 import { AiOutlineClose } from "react-icons/ai";
 import CreateSVG from "../../components/SVG/CreateSVG";
-// import Branding from "../../components/Branding";
+import Branding from "../../components/Branding";
 import { InputView } from "views";
 
 interface CreateViewProps {
@@ -329,7 +329,66 @@ export const CreateView: FC<CreateViewProps> = ({ setOpenCreateModal }) => {
           </div>
         </section>
       ) : (
-        ""
+        <section className="flex w-full items-center py-6 px-0 lg:h-screen lg:p-10">
+          <div className="container">
+            <div className="bg-default-950/40 mx-auto max-w-5xl overflow-hidden rounded-2xl backdrop-blur-2xl">
+              <div className="grid gap-10 lg:grid-cols-2"></div>
+              <Branding
+                image="auth-img"
+                title="solana token creator"
+                message="Have some patience"
+              />
+              <div className="lg:ps-0 flex h-full flex-col p-10">
+                <div className="pb-10">
+                  <a className="flex">
+                    <img src="assets/images/logo1.png" className="h-10 " />
+                  </a>
+                </div>
+
+                <div className="my-auto pb-6 text-center">
+                  <h4 className="mb-4 text-2xl fomt-bold text-white ">
+                    Link your new Token
+                  </h4>
+                  <p className="text-white mx-auto mb-5 max-w-sm ">
+                    Your Solana Token is successfully created check explorer
+                  </p>
+                  <div className="flex items-center justify-center">
+                    <img
+                      src={token.image || "assetslogo/logo1.png"}
+                      alt=""
+                      className="h-40"
+                    />
+                  </div>
+                  <div className="mt-5 w-full text-center">
+                    <p className="text-white text-base font-medium leading-6">
+                      {/* <InputView
+                        name={"Token Address"}
+                        placeholder={tokenMintAddress}
+                      /> */}
+                      <span
+                        onClick={() =>
+                          navigator.clipboard.writeText(tokenMintAddress)
+                        }
+                      >
+                        COPY
+                      </span>
+                    </p>
+                    <div className="mb-6 text-center ">
+                      <a
+                        href={`https://explorer.solana.com/address/${tokenMintAddress}?cluster=${networkConfiguration}`}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="mt-5 inlin-flex w-full items-center"
+                      >
+                        View on Solana
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       )}
     </>
   );
