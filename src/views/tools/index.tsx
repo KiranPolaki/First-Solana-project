@@ -61,23 +61,23 @@ export const ToolView: FC<ToolViewProps> = ({
     // },
   ];
   return (
-    <section id="tools" className="py-20">
+    <section id="tools" className="">
       <div className="container">
         <div className="md-10 flex items-end justify-between">
-          <div className="mx-auto max-w-2xl text-center">
+          <div className="mx-auto max-w-2xl text-center ">
             <h2 className="mb-4 text-3xl font-medium capitalize text-center text-white">
               Solana PowerFull tools
             </h2>
-            <p className="text-default-200 text-sm font-mediums">
+            <p className="text-default-200 text-sm font-mediums font-mono mb-8">
               Solana is a blockchain platform and cryptocurrency that allows for
               the creation and running of decentralized applications
             </p>
           </div>
         </div>
-        <div className=" grid gap-6 sm:grid-col-2 lg:grid-cols-4">
+        <div className=" grid gap-6 sm:grid-col-2 lg:grid-cols-4 ">
           {tools.map((tool, index) => (
             <div
-              className="bg-default-950/40 rounded-xl backdrop-blur-3xl"
+              className="bg-default-950/40 rounded-xl backdrop-blur-3xl hover:bg-red-800"
               onClick={() => tool.function(true)}
             >
               <div className="p-6">
@@ -91,15 +91,9 @@ export const ToolView: FC<ToolViewProps> = ({
                     {tool.name}
                   </h3>
                 </div>
-                <a
-                  className="text-primary group relative inline-flex items-center gap-2"
-                  href=""
-                >
-                  <span className="bg-primary/80 absolute -bottom-0 h-px w-7/12 rounded transition-all group-hover:w-full"></span>
-                  Select & try
-                  <i data-lucide={"move-right"}>
-                    <LuArrowRightFromLine />
-                  </i>
+
+                <a className="cursor-pointer text-white bg-gray-600 py-1 px-4 rounded-2xl hover:bg-gray-800">
+                  Try
                 </a>
               </div>
             </div>
@@ -108,7 +102,7 @@ export const ToolView: FC<ToolViewProps> = ({
         <div className="mt-10 flex justify-center">
           <a
             href=""
-            className="hover:bg-primary-hover bg-primary inline-flex items-center justify-center gap-2 rounded-full px-6 py-2 text-white transition-all duration-500"
+            className="cursor-pointer bg-black hover:bg-gray-800 flex py-2 px-4 items-center justify-center text-white rounded-3xl"
           >
             More Tools
             <IoIosArrowForward />
