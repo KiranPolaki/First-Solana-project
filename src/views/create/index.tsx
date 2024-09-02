@@ -365,6 +365,7 @@ export const CreateView: FC<CreateViewProps> = ({ setOpenCreateModal }) => {
                         name={"Token Address"}
                         placeholder={tokenMintAddress}
                       /> */}
+                      <p className="p-2 border-white">{tokenMintAddress}</p>
                       <span
                         onClick={() =>
                           navigator.clipboard.writeText(tokenMintAddress)

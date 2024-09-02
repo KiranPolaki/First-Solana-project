@@ -13,7 +13,7 @@ const NetworkSwitcher = () => {
         <select
           value={networkConfiguration}
           onChange={(e) => setNetworkConfiguration(e.target.value || "devnet")}
-          className="select max-w-xs border-none bg-transparent outline-0 p-2 bg-black focus:outline-none"
+          className="select max-w-xs border-none outline-0 p-2 bg-black focus:outline-none"
         >
           //TODO: fix styling of the menu options
           <option value="mainnet-beta">main</option>
