@@ -2,6 +2,7 @@ import { FC } from "react";
 import { MdGeneratingTokens } from "react-icons/md";
 import { IoIosArrowForward } from "react-icons/io";
 import { LuArrowRightFromLine } from "react-icons/lu";
+import { features } from "process";
 
 interface ToolViewProps {
   setOpenAirDrop: (open: boolean) => void;
@@ -22,10 +23,14 @@ export const ToolView: FC<ToolViewProps> = ({
     {
       name: "Create Token",
       icon: <MdGeneratingTokens />,
+      description:
+        "A Solana token is a digital asset that represents ownership of an asset on the Solana blockchain",
       function: setOpenCreateModal,
     },
     {
       name: "Token MetaData",
+      description:
+        "Token metadata is the additional information associated with a token on the Solana blockchain, such as its name, symbol, description, and image",
       icon: <MdGeneratingTokens />,
       function: setOpenTokenMetaData,
     },
@@ -36,11 +41,15 @@ export const ToolView: FC<ToolViewProps> = ({
     // },
     {
       name: "AirDrop",
+      description:
+        "An airdrop in Solana is the mass distribution of tokens to a list of wallets, typically as a promotional or reward method",
       icon: <MdGeneratingTokens />,
       function: setOpenAirDrop,
     },
     {
       name: "Send Transaction",
+      description:
+        "The sendTransaction method in Solana submits a signed transaction to the cluster for processing.",
       icon: <MdGeneratingTokens />,
       function: setOpenSendTransaction,
     },
@@ -61,7 +70,7 @@ export const ToolView: FC<ToolViewProps> = ({
     // },
   ];
   return (
-    <section id="tools" className="">
+    <section id="tools" className=" py-12">
       <div className="container">
         <div className="md-10 flex items-end justify-between">
           <div className="mx-auto max-w-2xl text-center ">
@@ -87,11 +96,14 @@ export const ToolView: FC<ToolViewProps> = ({
                   >
                     <i data-lucide="dribble">{tool.icon}</i>
                   </div>
-                  <h3 className="text-default-200 text-xl font-medium">
+                  <h3 className="text-default-200 text-xl font-extrabold font-mono">
                     {tool.name}
                   </h3>
                 </div>
 
+                <p className="pb-4 text-white/60 font-mono text-sm">
+                  {tool.description}
+                </p>
                 <a className="cursor-pointer text-white bg-green-600 py-1 px-4 rounded-2xl hover:bg-green-700">
                   Try
                 </a>
