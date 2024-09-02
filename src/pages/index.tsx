@@ -31,13 +31,14 @@ const Home: NextPage = (props) => {
         />
       </Head>
       <HomeView setOpenCreateModal={setOpenCreateModal} />
-      {/* <ToolView
+      <ToolView
         setOpenAirDrop={setOpenAirDrop}
         setOpenContact={setOpenContact}
         setOpenCreateModal={setOpenCreateModal}
         setOpenSendTransaction={setOpenSendTransaction}
         setOpenTokenMetaData={setOpenTokenMetaData}
       />
+      {/* 
       <FeatureView
         setOpenAirDrop={setOpenAirDrop}
         setOpenContact={setOpenContact}
