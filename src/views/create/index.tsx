@@ -334,7 +334,7 @@ export const CreateView: FC<CreateViewProps> = ({ setOpenCreateModal }) => {
             <div className="bg-default-950/40 mx-auto max-w-5xl overflow-hidden rounded-2xl backdrop-blur-2xl">
               <div className="grid gap-10 lg:grid-cols-2"></div>
               <Branding
-                image="auth-img"
+                image="auth-img1"
                 title="solana token creator"
                 message="Have some patience"
               />
@@ -383,6 +383,23 @@ export const CreateView: FC<CreateViewProps> = ({ setOpenCreateModal }) => {
                       >
                         View on Solana
                       </a>
+                    </div>
+
+                    <div>
+                      <div className="text-center">
+                        <ul className="flex flex-wrap items-center justify-center gap-2 ">
+                          <li>
+                            <a
+                              onClick={() => setOpenCreateModal(false)}
+                              className="group inline-flex h-10 w-10 items-center justify-center rounded-lg bg-white/20 duration-500 transition-all hover:bg-blue-600/60"
+                            >
+                              <i className="text-2xl text-white group-hover:text-white">
+                                <AiOutlineClose />
+                              </i>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>

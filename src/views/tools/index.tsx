@@ -32,7 +32,7 @@ export const ToolView: FC<ToolViewProps> = ({
           stroke="currentColor"
           stroke-width="2"
           stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinejoin="round"
           className="lucide lucide-database"
         >
           <ellipse cx="12" cy="5" rx="9" ry="3" />
@@ -58,7 +58,7 @@ export const ToolView: FC<ToolViewProps> = ({
           stroke="currentColor"
           stroke-width="2"
           stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinejoin="round"
           className="lucide lucide-bitcoin"
         >
           <path d="M11.767 19.089c4.924.868 6.14-6.025 1.216-6.894m-1.216 6.894L5.86 18.047m5.908 1.042-.347 1.97m1.563-8.864c4.924.869 6.14-6.025 1.215-6.893m-1.215 6.893-3.94-.694m5.155-6.2L8.29 4.26m5.908 1.042.348-1.97M7.48 20.364l3.126-17.727" />
@@ -85,7 +85,7 @@ export const ToolView: FC<ToolViewProps> = ({
           stroke="currentColor"
           stroke-width="2"
           stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinejoin="round"
           className="lucide lucide-plane"
         >
           <path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z" />
@@ -107,7 +107,7 @@ export const ToolView: FC<ToolViewProps> = ({
           stroke="currentColor"
           stroke-width="2"
           stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinejoin="round"
           className="lucide lucide-send-horizontal"
         >
           <path d="M3.714 3.048a.498.498 0 0 0-.683.627l2.843 7.627a2 2 0 0 1 0 1.396l-2.842 7.627a.498.498 0 0 0 .682.627l18-8.5a.5.5 0 0 0 0-.904z" />

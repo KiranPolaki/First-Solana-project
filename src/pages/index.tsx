@@ -7,7 +7,7 @@ import {
   ToolView,
   FeatureView,
   CreateView,
-  // TokenMetadata,
+  TokenMetadata,
   // ContactView,
   // AirDropView,
   // DonateView,
@@ -49,12 +49,12 @@ const Home: NextPage = (props) => {
           <CreateView setOpenCreateModal={setOpenCreateModal} />
         </div>
       )}
-      {/* 
       {openTokenMetaData && (
         <div className="new_loader relative h-full bg-slate-900">
           <TokenMetadata setOpenTokenMetaData={setOpenTokenMetaData} />
         </div>
       )}
+      {/* 
       {openContact && (
         <div className="new_loader relative h-full bg-slate-900">
           <ContactView setOpenContact={setOpenTokenMetaData} />

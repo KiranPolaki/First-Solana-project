@@ -3,7 +3,7 @@ import React, { ChangeEvent, FC } from "react";
 interface InputViewProps {
   name: string;
   placeholder: string;
-  clickhandle: (e: ChangeEvent<HTMLInputElement>) => void;
+  clickhandle?: (e: ChangeEvent<HTMLInputElement>) => void;
 }
 
 export const InputView: FC<InputViewProps> = ({

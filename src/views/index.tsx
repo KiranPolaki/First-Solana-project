@@ -5,5 +5,5 @@ export { FeatureView } from "./feature";
 // export { DonateView } from "./donate";
 export { CreateView } from "./create";
 export { InputView } from "./input";
-// export { TokenMetadata } from "./tokenMetadata";
+export { TokenMetadata } from "./tokenMetadata";
 // export { ContactView } from "./conatct";
