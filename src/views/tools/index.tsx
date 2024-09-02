@@ -22,7 +22,24 @@ export const ToolView: FC<ToolViewProps> = ({
   const tools = [
     {
       name: "Create Token",
-      icon: <MdGeneratingTokens />,
+      icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          className="lucide lucide-database"
+        >
+          <ellipse cx="12" cy="5" rx="9" ry="3" />
+          <path d="M3 5V19A9 3 0 0 0 21 19V5" />
+          <path d="M3 12A9 3 0 0 0 21 12" />
+        </svg>
+      ),
       description:
         "A Solana token is a digital asset that represents ownership of an asset on the Solana blockchain",
       function: setOpenCreateModal,
@@ -31,7 +48,22 @@ export const ToolView: FC<ToolViewProps> = ({
       name: "Token MetaData",
       description:
         "Token metadata is the additional information associated with a token on the Solana blockchain, such as its name, symbol, description, and image",
-      icon: <MdGeneratingTokens />,
+      icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          className="lucide lucide-bitcoin"
+        >
+          <path d="M11.767 19.089c4.924.868 6.14-6.025 1.216-6.894m-1.216 6.894L5.86 18.047m5.908 1.042-.347 1.97m1.563-8.864c4.924.869 6.14-6.025 1.215-6.893m-1.215 6.893-3.94-.694m5.155-6.2L8.29 4.26m5.908 1.042.348-1.97M7.48 20.364l3.126-17.727" />
+        </svg>
+      ),
       function: setOpenTokenMetaData,
     },
     // {
@@ -43,14 +75,45 @@ export const ToolView: FC<ToolViewProps> = ({
       name: "AirDrop",
       description:
         "An airdrop in Solana is the mass distribution of tokens to a list of wallets, typically as a promotional or reward method",
-      icon: <MdGeneratingTokens />,
+      icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          className="lucide lucide-plane"
+        >
+          <path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z" />
+        </svg>
+      ),
       function: setOpenAirDrop,
     },
     {
       name: "Send Transaction",
       description:
         "The sendTransaction method in Solana submits a signed transaction to the cluster for processing.",
-      icon: <MdGeneratingTokens />,
+      icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          className="lucide lucide-send-horizontal"
+        >
+          <path d="M3.714 3.048a.498.498 0 0 0-.683.627l2.843 7.627a2 2 0 0 1 0 1.396l-2.842 7.627a.498.498 0 0 0 .682.627l18-8.5a.5.5 0 0 0 0-.904z" />
+          <path d="M6 12h16" />
+        </svg>
+      ),
       function: setOpenSendTransaction,
     },
     // {
@@ -101,7 +164,7 @@ export const ToolView: FC<ToolViewProps> = ({
                   </h3>
                 </div>
 
-                <p className="pb-4 text-white/60 font-mono text-sm">
+                <p className="pb-4 text-white/60 font-mono text-sm max-h-38 h-full">
                   {tool.description}
                 </p>
                 <a className="cursor-pointer text-white bg-green-600 py-1 px-4 rounded-2xl hover:bg-green-700">
