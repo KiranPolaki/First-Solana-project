@@ -65,7 +65,7 @@ export const ToolView: FC<ToolViewProps> = ({
       <div className="container">
         <div className="md-10 flex items-end justify-between">
           <div className="mx-auto max-w-2xl text-center ">
-            <h2 className="mb-4 text-3xl font-medium capitalize text-center text-white">
+            <h2 className="mb-4 text-4xl font-mono font-extrabold capitalize text-center text-white">
               Solana PowerFull tools
             </h2>
             <p className="text-default-200 text-sm font-mediums font-mono mb-8">
@@ -92,7 +92,7 @@ export const ToolView: FC<ToolViewProps> = ({
                   </h3>
                 </div>
 
-                <a className="cursor-pointer text-white bg-gray-600 py-1 px-4 rounded-2xl hover:bg-gray-800">
+                <a className="cursor-pointer text-white bg-green-600 py-1 px-4 rounded-2xl hover:bg-green-700">
                   Try
                 </a>
               </div>
