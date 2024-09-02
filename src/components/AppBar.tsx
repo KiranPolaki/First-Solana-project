@@ -16,7 +16,7 @@ export const AppBar: FC = (props) => {
 
   return (
     <div>
-      <header id="navbar-sticky" className="navbar">
+      <header id="navbar-sticky font-mono" className="navbar">
         <div className="container">
           <nav>
             <a href="/" className="logo">
@@ -37,9 +37,12 @@ export const AppBar: FC = (props) => {
               } grow basis-full items-center justify-center transition-all duration-300 lg:mt-0 lg:flex lg:basis-auto`}
               id="mobileMenu"
             >
-              <ul id="navbar-navlist" className="navbar-nav">
+              <ul id="navbar-navlist " className="gap-10 flex">
                 {menu.map((list, i) => (
-                  <li className="nav-item" key={i}>
+                  <li
+                    className="font-mono font-extrabold text-lg text-black hover:text-gray-400"
+                    key={i}
+                  >
                     <a className="nav-link" href={`${list.link}`}>
                       {list.name}
                     </a>
